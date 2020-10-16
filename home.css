@@ -1,0 +1,318 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .hero {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./bgc2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .hero::after {
+        content: "";
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.788);
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .left {
+        position: absolute;
+        color: white;
+        z-index: 10;
+        width: 50%;
+        height: 100vh;
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+    
+    .left h2 {
+        font-size: 3rem;
+    }
+    
+    .left p {
+        font-size: 2rem;
+    }
+    
+    .left .contectMe {
+        background-color: #fff;
+        width: fit-content;
+        margin-top: 10%;
+        padding: 12px;
+    }
+    
+    .left .contectMe:hover {
+        margin-top: 10.5%;
+        margin-left: 0.5%;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .left a {
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+        font-weight: small;
+    }
+    /* the cool design */
+    
+    .right {
+        position: absolute;
+        left: 50%;
+        z-index: 10;
+        color: white;
+        width: 50%;
+        height: 100vh;
+        padding-top: 15%;
+        padding-left: 10%;
+    }
+    
+    .right span {
+        font-size: 1.2rem;
+    }
+    
+    .right .circle {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 40px;
+    }
+    
+    .right .circle:nth-child(1) {
+        position: absolute;
+        left: 30%;
+        top: 10%;
+    }
+    
+    .right .circle:nth-child(1) span {
+        position: absolute;
+        right: 150%;
+        top: 10%;
+    }
+    
+    .right .circle:nth-child(2) {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+    }
+    
+    .right .circle:nth-child(2) span {
+        position: absolute;
+        left: 150%;
+        top: 30%;
+    }
+    
+    .right .circle:nth-child(3) {
+        position: absolute;
+        left: 20%;
+        top: 50%;
+    }
+    
+    .right .circle:nth-child(3) span {
+        position: absolute;
+        right: 150%;
+        top: 30%;
+    }
+    
+    .right::before {
+        content: "";
+        width: 2px;
+        height: 230px;
+        position: absolute;
+        left: 45%;
+        top: 30%;
+        transform: rotate(55deg);
+        background-color: #fff;
+    }
+    
+    .right::before {
+        content: "";
+        width: 2px;
+        height: 230px;
+        position: absolute;
+        left: 45%;
+        top: 30%;
+        transform: rotate(55deg);
+        background-color: #fff;
+    }
+    
+    .right::after {
+        content: "";
+        width: 2px;
+        height: 180px;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: rotate(-45deg);
+        background-color: #fff;
+    }
+    
+    .button {
+        z-index: 30;
+        color: white;
+        position: absolute;
+        top: 85%;
+        display: flex;
+        width: 100%;
+    }
+    
+    .button .le {
+        width: 50%;
+        padding: 30px;
+        text-align: right;
+        border-right: 2px solid white;
+    }
+    
+    .button .ri {
+        width: 50%;
+        padding: 30px;
+        text-align: left;
+    }
+    /* responsiv */
+    
+    @media(max-width:400px) {
+        .hero {
+            max-width: 100%;
+            height: 100vh;
+            background-image: url(./bgc2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .hero::after {
+            content: "";
+            height: 100vh;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.788);
+            width: 100%;
+            z-index: 1;
+        }
+        .left h2 {
+            font-size: 1.5rem;
+        }
+        .left p {
+            font-size: 1rem;
+        }
+        .contectMe span {
+            font-size: 1rem;
+        }
+        .left .contectMe {
+            background-color: #fff;
+            width: fit-content;
+            margin-top: 10%;
+            padding: 12px;
+        }
+        .right {
+            display: block;
+            max-width: 100%;
+            height: 50vh;
+            top: 30%;
+            left: 10px;
+        }
+        .left {
+            display: block;
+            max-width: 360px;
+            top: 10px;
+            left: 0px;
+            height: auto;
+        }
+        .right span {
+            font-size: 0.8rem;
+        }
+        .right .circle {
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 50px;
+        }
+        .right .circle:nth-child(1) {
+            position: absolute;
+            left: 15%;
+            top: 5%;
+        }
+        .right .circle:nth-child(1) span {
+            position: absolute;
+            right: 150%;
+            top: 10%;
+        }
+        .right .circle:nth-child(2) {
+            position: absolute;
+            left: 70%;
+            top: 25%;
+        }
+        .right .circle:nth-child(2) span {
+            position: absolute;
+            left: 150%;
+            top: 30%;
+        }
+        .right .circle:nth-child(3) {
+            position: absolute;
+            left: 5%;
+            top: 50%;
+        }
+        .right .circle:nth-child(3) span {
+            position: absolute;
+            right: 150%;
+            top: 30%;
+        }
+        .right::before {
+            content: "";
+            width: 2px;
+            height: 10px;
+            position: absolute;
+            left: 45%;
+            top: 30%;
+            transform: rotate(30deg);
+            background-color: #fff;
+        }
+        .right::before {
+            content: "";
+            width: 2px;
+            height: 150px;
+            position: absolute;
+            left: 70%;
+            top: 35%;
+            transform: rotate(55deg);
+            background-color: #fff;
+        }
+        .right::after {
+            content: "";
+            width: 2px;
+            height: 110px;
+            position: absolute;
+            left: 78%;
+            top: 18%;
+            transform: rotate(-52deg);
+            background-color: #fff;
+        }
+        .button {
+            z-index: 30;
+            color: white;
+            position: absolute;
+            top: 75%;
+            display: flex;
+            max-width: 300px;
+        }
+        .button .le {
+            width: 50%;
+            padding: 10px;
+            text-align: right;
+            border-right: 2px solid white;
+        }
+        .button .ri {
+            width: 50%;
+            padding: 10px;
+            text-align: left;
+        }
+    }
